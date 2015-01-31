@@ -7,8 +7,12 @@
 
 
 function getDapps() {
-	
-	
+  var args = {};
+  
+  // list dapps
+  etherface.dapp('list', args, function(dapps) {
+    
+  });
 }
 
 function updateDappTable(dapps) {
@@ -16,6 +20,11 @@ function updateDappTable(dapps) {
 
 
 function getDapp() {
+  
+  // get dapp
+  etherface.dapp('view', args, function(dapp) {
+    
+  });
 }
 
 
